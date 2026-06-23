@@ -39,6 +39,16 @@ spotify_to_tidal --sync-favorites
 
 See example_config.yml for more configuration options, and `spotify_to_tidal --help` for more options.
 
+GUI
+---
+To use the local GUI run:
+
+```bash
+python -m spotify_to_tidal.gui
+```
+
+The GUI can save `config.yml`, connect Spotify/Tidal, load Spotify playlists into a selectable list, mark duplicate playlist names, and run the existing sync.
+
 ---
 
 #### Join our amazing community as a code contributor

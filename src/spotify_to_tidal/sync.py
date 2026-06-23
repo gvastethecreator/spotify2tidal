@@ -376,12 +376,41 @@ def get_user_playlist_mappings(spotify_session: spotipy.Spotify, tidal_session: 
         results.append( pick_tidal_playlist_for_spotify_playlist(spotify_playlist, tidal_playlists) )
     return results
 
+def playlist_id(value: str) -> str:
+    return str(value).strip().split('?')[0].rstrip('/').split('/')[-1].split(':')[-1].strip()
+
+def playlist_name_key(playlist) -> str:
+    return normalize(playlist.get('name', '')).casefold().strip()
+
+def filter_spotify_playlists(playlists, user_id: str, config):
+    include_list = set([playlist_id(x) for x in config.get('included_playlists', [])])
+    exclude_list = set([playlist_id(x) for x in config.get('excluded_playlists', [])])
+    seen_names = set()
+    output = []
+
+    for playlist in playlists:
+        if not playlist:
+            continue
+        if include_list:
+            if playlist['id'] not in include_list:
+                continue
+        elif playlist['owner']['id'] != user_id:
+            continue
+        if playlist['id'] in exclude_list:
+            continue
+        name_key = playlist_name_key(playlist)
+        if config.get('skip_duplicate_playlist_names') and name_key in seen_names:
+            print(f"Skipping duplicate Spotify playlist name: {playlist['name']}")
+            continue
+        seen_names.add(name_key)
+        output.append(playlist)
+    return output
+
 async def get_playlists_from_spotify(spotify_session: spotipy.Spotify, config):
     # get all the playlists from the Spotify account
     playlists = []
     print("Loading Spotify playlists")
     first_results = spotify_session.current_user_playlists()
-    exclude_list = set([x.split(':')[-1] for x in config.get('excluded_playlists', [])])
     playlists.extend([p for p in first_results['items']])
     user_id = spotify_session.current_user()['id']
 
@@ -392,10 +421,7 @@ async def get_playlists_from_spotify(spotify_session: spotipy.Spotify, config):
         for extra_result in extra_results:
             playlists.extend([p for p in extra_result['items']])
 
-    # filter out playlists that don't belong to us or are on the exclude list
-    my_playlist_filter = lambda p: p and p['owner']['id'] == user_id
-    exclude_filter = lambda p: not p['id'] in exclude_list
-    return list(filter( exclude_filter, filter( my_playlist_filter, playlists )))
+    return filter_spotify_playlists(playlists, user_id, config)
 
 def get_playlists_from_config(spotify_session: spotipy.Spotify, tidal_session: tidalapi.Session, config):
     # get the list of playlist sync mappings from the configuration file

@@ -72,4 +72,6 @@ def test_open_spotify_session_oauth_error(mocker):
 
     # Call the function under test and assert sys.exit is called
     open_spotify_session(mock_config)
-    mock_sys_exit.assert_called_once()
+    mock_sys_exit.assert_called_once_with(
+        "Error opening Spotify session; could not get token for username: test_user"
+    )

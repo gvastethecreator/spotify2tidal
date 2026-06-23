@@ -23,4 +23,6 @@ class PlaylistConfig(TypedDict):
 class SyncConfig(TypedDict):
     spotify: SpotifyConfig
     sync_playlists: Optional[List[PlaylistConfig]]
+    included_playlists: Optional[List[str]]
     excluded_playlists: Optional[List[str]]
+    skip_duplicate_playlist_names: Optional[bool]

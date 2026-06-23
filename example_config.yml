@@ -11,6 +11,11 @@ spotify:
 #  - spotify_id: 1ABCDEqsABCD6EaABCDa0a
 #    tidal_id: a0b1234-0a1b-012a-abcd-a1b234c5d6d7
 
+# used by the GUI when selecting Spotify playlists from the list
+#included_playlists:
+#  - 1ABCDEqsABCD6EaABCDa0a
+#skip_duplicate_playlist_names: false
+
 # uncomment this block if you want to sync all playlists in the account with some exceptions
 #excluded_playlists:
 #  - spotify:playlist:1ABCDEqsABCD6EaABCDa0a
