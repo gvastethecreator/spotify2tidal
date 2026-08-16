@@ -1,0 +1,733 @@
+{
+  "generated_at": "2026-08-15T09:31:48Z",
+  "generated_from_commit": "62ae0937a1374ef05d301120639cd0e96cc0c4f7",
+  "scope": [
+    "."
+  ],
+  "nodes": [
+    {
+      "id": "external-dependencies",
+      "path": "src/spotify_to_tidal/__main__.py",
+      "role": "Represents external packages referenced by tracked source files.",
+      "type": "external",
+      "boundary": "External",
+      "entrypoints": [
+        "src/spotify_to_tidal/__main__.py:yaml"
+      ],
+      "tests": [],
+      "constraints": [
+        "Only dependencies with literal tracked-source references appear here."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "yaml"
+          }
+        ]
+      }
+    },
+    {
+      "id": "repository",
+      "path": "pyproject.toml",
+      "role": "Owns the tracked files for the repository module.",
+      "type": "module",
+      "boundary": "Repository",
+      "entrypoints": [
+        "pyproject.toml:build-system"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "pyproject.toml",
+            "symbol": "build-system"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-auth",
+      "path": "src/spotify_to_tidal/auth.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / auth module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/auth.py:open_spotify_session"
+      ],
+      "tests": [
+        "tests/unit/test_auth.py"
+      ],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "open_spotify_session"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-cache",
+      "path": "src/spotify_to_tidal/cache.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / cache module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/cache.py:MatchFailureDatabase"
+      ],
+      "tests": [
+        "tests/unit/test_cache.py"
+      ],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/cache.py",
+            "symbol": "MatchFailureDatabase"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-gui",
+      "path": "src/spotify_to_tidal/gui.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / gui module.",
+      "type": "interface",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/gui.py:mode"
+      ],
+      "tests": [
+        "tests/unit/test_gui.py"
+      ],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "mode"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-gui-ui",
+      "path": "src/spotify_to_tidal/gui_ui.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / gui_ui module.",
+      "type": "interface",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/gui_ui.py:setTheme"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui_ui.py",
+            "symbol": "setTheme"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-main",
+      "path": "src/spotify_to_tidal/__main__.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / __main__ module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/__main__.py:main"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "main"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-sync",
+      "path": "src/spotify_to_tidal/sync.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / sync module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/sync.py:normalize"
+      ],
+      "tests": [
+        "tests/unit/test_gui.py"
+      ],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "normalize"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-tidalapi-patch",
+      "path": "src/spotify_to_tidal/tidalapi_patch.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / tidalapi_patch module.",
+      "type": "interface",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/tidalapi_patch.py:_remove_indices_from_playlist"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "_remove_indices_from_playlist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-type",
+      "path": "src/spotify_to_tidal/type",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / type module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/type/__init__.py:from .config import SpotifyConfig, TidalConfig, PlaylistConfig, SyncConfig"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/__init__.py",
+            "symbol": "from .config import SpotifyConfig, TidalConfig, PlaylistConfig, SyncConfig"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-type-config",
+      "path": "src/spotify_to_tidal/type/config.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / type / config module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/type/config.py:SpotifyConfig"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/config.py",
+            "symbol": "SpotifyConfig"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-spotify-to-tidal-type-spotify",
+      "path": "src/spotify_to_tidal/type/spotify.py",
+      "role": "Owns the tracked files for the src / spotify_to_tidal / type / spotify module.",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/spotify_to_tidal/type/spotify.py:SpotifyImage"
+      ],
+      "tests": [],
+      "constraints": [
+        "This baseline uses tracked source and explicit dependency references only."
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/spotify.py",
+            "symbol": "SpotifyImage"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "src-spotify-to-tidal-auth",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "sys"
+          },
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "spotipy"
+          },
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "tidalapi"
+          },
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "webbrowser"
+          },
+          {
+            "path": "src/spotify_to_tidal/auth.py",
+            "symbol": "yaml"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-cache",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/cache.py",
+            "symbol": "sqlalchemy"
+          },
+          {
+            "path": "src/spotify_to_tidal/cache.py",
+            "symbol": "typing"
+          },
+          {
+            "path": "src/spotify_to_tidal/cache.py",
+            "symbol": "datetime"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-gui",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "__future__"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "collections"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "pathlib"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "http.server"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "urllib.parse"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "argparse"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "copy"
+          },
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "json"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-gui",
+      "to": "src-spotify-to-tidal-auth",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "auth"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-gui",
+      "to": "src-spotify-to-tidal-gui-ui",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": ".gui_ui"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-gui",
+      "to": "src-spotify-to-tidal-sync",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/gui.py",
+            "symbol": "sync"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-main",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "yaml"
+          },
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "argparse"
+          },
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "sys"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-main",
+      "to": "src-spotify-to-tidal-auth",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "auth"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-main",
+      "to": "src-spotify-to-tidal-sync",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/__main__.py",
+            "symbol": "sync"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-sync",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "difflib"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "functools"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "typing"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "tqdm.asyncio"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "tqdm"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "asyncio"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "datetime"
+          },
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": "math"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-sync",
+      "to": "src-spotify-to-tidal-cache",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": ".cache"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-sync",
+      "to": "src-spotify-to-tidal-tidalapi-patch",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": ".tidalapi_patch"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-sync",
+      "to": "src-spotify-to-tidal-type",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/sync.py",
+            "symbol": ".type"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-tidalapi-patch",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "typing"
+          },
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "tqdm"
+          },
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "tqdm.asyncio"
+          },
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "asyncio"
+          },
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "math"
+          },
+          {
+            "path": "src/spotify_to_tidal/tidalapi_patch.py",
+            "symbol": "tidalapi"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-type",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/__init__.py",
+            "symbol": "spotipy"
+          },
+          {
+            "path": "src/spotify_to_tidal/type/__init__.py",
+            "symbol": "tidalapi"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-type",
+      "to": "src-spotify-to-tidal-type-config",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/__init__.py",
+            "symbol": ".config"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-type",
+      "to": "src-spotify-to-tidal-type-spotify",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/__init__.py",
+            "symbol": ".spotify"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-type-config",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/config.py",
+            "symbol": "typing"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-spotify-to-tidal-type-spotify",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/spotify_to_tidal/type/spotify.py",
+            "symbol": "spotipy"
+          },
+          {
+            "path": "src/spotify_to_tidal/type/spotify.py",
+            "symbol": "typing"
+          }
+        ]
+      }
+    }
+  ],
+  "flows": [
+    {
+      "trigger": "Tracked reference src/spotify_to_tidal/gui.py:sync",
+      "steps": [
+        "src-spotify-to-tidal-gui",
+        "src-spotify-to-tidal-sync",
+        "src-spotify-to-tidal-type",
+        "src-spotify-to-tidal-type-config",
+        "external-dependencies"
+      ],
+      "outcome": "The verified dependency path reaches external-dependencies through 4 step(s)."
+    },
+    {
+      "trigger": "Tracked reference src/spotify_to_tidal/gui.py:sync to external-dependencies",
+      "steps": [
+        "src-spotify-to-tidal-gui",
+        "src-spotify-to-tidal-sync",
+        "src-spotify-to-tidal-type",
+        "src-spotify-to-tidal-type-spotify",
+        "external-dependencies"
+      ],
+      "outcome": "The verified dependency path reaches external-dependencies through 4 step(s)."
+    },
+    {
+      "trigger": "Tracked reference src/spotify_to_tidal/__main__.py:sync",
+      "steps": [
+        "src-spotify-to-tidal-main",
+        "src-spotify-to-tidal-sync",
+        "src-spotify-to-tidal-type",
+        "src-spotify-to-tidal-type-config",
+        "external-dependencies"
+      ],
+      "outcome": "The verified dependency path reaches external-dependencies through 4 step(s)."
+    },
+    {
+      "trigger": "Tracked reference src/spotify_to_tidal/__main__.py:sync to external-dependencies",
+      "steps": [
+        "src-spotify-to-tidal-main",
+        "src-spotify-to-tidal-sync",
+        "src-spotify-to-tidal-type",
+        "src-spotify-to-tidal-type-spotify",
+        "external-dependencies"
+      ],
+      "outcome": "The verified dependency path reaches external-dependencies through 4 step(s)."
+    },
+    {
+      "trigger": "Tracked reference src/spotify_to_tidal/sync.py:.type",
+      "steps": [
+        "src-spotify-to-tidal-sync",
+        "src-spotify-to-tidal-type",
+        "src-spotify-to-tidal-type-config",
+        "external-dependencies"
+      ],
+      "outcome": "The verified dependency path reaches external-dependencies through 3 step(s)."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "🧪 Tests", "type": "shell", "command": "python -m pytest", "problemMatcher": [] },
+    { "label": "📦 Install", "type": "shell", "command": "python -m pip install -e .", "problemMatcher": [] },
+    { "label": "🩺 Help", "type": "shell", "command": "python -m spotify_to_tidal --help", "problemMatcher": [] },
+    { "label": "🧹 Diff", "type": "shell", "command": "git diff --check", "problemMatcher": [] }
+  ]
+}

@@ -29,8 +29,12 @@ venv/
 
 # mypy
 .mypy_cache/
+.pytest_cache/
+.coverage*
+htmlcov/
 .dmypy.json
 dmypy.json
 
 # Visual Studio Code
-.vscode/
+.vscode/*
+!.vscode/tasks.json

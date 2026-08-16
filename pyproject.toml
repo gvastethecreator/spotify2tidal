@@ -8,13 +8,13 @@ version = "1.0.7"
 requires-python = ">= 3.10"
 
 dependencies = [
-  "spotipy~=2.24",
-  "tidalapi~=0.8.10",
-  "pyyaml~=6.0",
-  "tqdm~=4.64",
-  "sqlalchemy~=2.0",
-  "pytest~=8.0",
-  "pytest-mock~=3.8"
+  "spotipy==2.26.0",
+  "tidalapi==0.8.11",
+  "pyyaml==6.0.3",
+  "tqdm==4.70.0",
+  "sqlalchemy==2.0.52",
+  "pytest==9.1.1",
+  "pytest-mock==3.15.1"
 ]
 
 [tool.setuptools.packages.find]

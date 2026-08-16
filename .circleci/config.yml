@@ -1,38 +1,28 @@
 version: 2.1
 
 jobs:
-  setup:
-    docker:
-      - image: circleci/python:3.10
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: |
-            python -m pip install --upgrade pip
-            pip install -e .
-            pip install pytest pytest-mock
-
   test:
     docker:
-      - image: circleci/python:3.10
+      - image: cimg/python:3.13
     steps:
       - checkout
       - run:
           name: Install dependencies
           command: |
             python -m pip install --upgrade pip
-            pip install -e .
-            pip install pytest pytest-mock
+            python -m pip install .
       - run:
           name: Run tests
-          command: pytest
+          command: python -m pytest
+      - run:
+          name: Verify package integrity
+          command: |
+            python -m pip check
+            python -m compileall -q src tests
+            python -m spotify_to_tidal --help
 
 workflows:
   version: 2
   test_workflow:
     jobs:
-      - setup
-      - test:
-          requires:
-            - setup
+      - test

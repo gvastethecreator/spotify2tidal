@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="A local-first workflow for moving Spotify playlists into Tidal with deliberate duplicate review.">
+  <meta property="og:title" content="Spotify to Tidal">
+  <meta property="og:description" content="Move playlists. Review every match.">
+  <meta property="og:image" content="assets/screenshots/migration-overview.png">
+  <title>Spotify to Tidal — transfer notes</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="https://github.com/gvastethecreator/spotify2tidal" aria-label="Spotify to Tidal on GitHub">
+      <span class="mark" aria-hidden="true">S→T</span>
+      <span>Spotify to Tidal</span>
+    </a>
+    <nav aria-label="Project links">
+      <a href="#workflow">Workflow</a>
+      <a href="#proof">Proof</a>
+      <a href="https://github.com/gvastethecreator/spotify2tidal">Source</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Local transfer utility · Python 3.10+</p>
+      <h1 id="hero-title">Move playlists.<br><span>Review every match.</span></h1>
+      <p class="lede">A local GUI and CLI for moving a Spotify collection into Tidal without treating duplicate names as an afterthought.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/gvastethecreator/spotify2tidal#install">Install the fork</a>
+        <a class="button" href="https://github.com/gvastethecreator/spotify2tidal#product-tour">View the full tour</a>
+      </div>
+      <div class="route" aria-label="Transfer workflow">
+        <span>Spotify</span><b aria-hidden="true">01</b>
+        <i aria-hidden="true"></i>
+        <span>Review</span><b aria-hidden="true">02</b>
+        <i aria-hidden="true"></i>
+        <span>Tidal</span><b aria-hidden="true">03</b>
+      </div>
+    </section>
+
+    <figure class="product-shot" id="proof">
+      <a href="assets/screenshots/migration-overview.png" aria-label="Open the full-resolution migration overview">
+        <img src="assets/screenshots/migration-overview.png" alt="Spotify to Tidal migration overview with playlist selection, duplicate review, and sync plan">
+      </a>
+      <figcaption><span>Public demo / no credentials</span><span>Open full proof · 1440 px</span></figcaption>
+    </figure>
+
+    <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+      <div>
+        <p class="eyebrow">One deliberate route</p>
+        <h2 id="workflow-title">From collection to reviewed plan.</h2>
+      </div>
+      <ol>
+        <li><span>01</span><div><strong>Connect locally</strong><p>Your configuration remains in an ignored file on your machine.</p></div></li>
+        <li><span>02</span><div><strong>Choose the scope</strong><p>Move everything, selected playlists, one URI, or explicit mappings.</p></div></li>
+        <li><span>03</span><div><strong>Resolve collisions</strong><p>Same-name playlists are visible before a destination write begins.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="proof-index" aria-labelledby="proof-title">
+      <div class="proof-heading">
+        <p class="eyebrow">Runtime evidence</p>
+        <h2 id="proof-title">Inspect the real interface.</h2>
+        <p>Every capture comes from the built-in public demo. The demo presents the workflow without account access and does not launch a sync.</p>
+      </div>
+      <div class="proof-links">
+        <a href="assets/screenshots/duplicate-review.png"><span>Duplicate review</span><small>Two same-name playlists</small></a>
+        <a href="assets/screenshots/connection-settings.png"><span>Connection settings</span><small>Local configuration boundary</small></a>
+        <a href="assets/screenshots/mobile-playlist-review.png"><span>Mobile review</span><small>390 px without overflow</small></a>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p>Nothing in the public demo is synced.</p>
+      <a href="https://github.com/sponsors/gvastethecreator">Sponsor ongoing maintenance ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Maintained fork of <a href="https://github.com/spotify2tidal/spotify_to_tidal">spotify_to_tidal</a>.</span>
+    <span>MIT · local-first · English UI</span>
+  </footer>
+</body>
+</html>

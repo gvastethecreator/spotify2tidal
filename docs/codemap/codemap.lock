@@ -1,0 +1,70 @@
+{
+  "source_commit": "62ae0937a1374ef05d301120639cd0e96cc0c4f7",
+  "working_tree_dirty": true,
+  "generated_at": "2026-08-15T09:31:48Z",
+  "scanned_scope": [
+    "."
+  ],
+  "excluded_directories": [
+    ".cache",
+    ".git",
+    ".hg",
+    ".next",
+    ".nuxt",
+    ".pytest_cache",
+    ".scratch",
+    ".svn",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "build",
+    "coverage",
+    "dist",
+    "docs/codemap",
+    "generated",
+    "node_modules",
+    "out",
+    "target",
+    "vendor",
+    "venv"
+  ],
+  "fingerprint_algorithm": "sha256-path-content-v1",
+  "modules": [
+    {
+      "id": ".",
+      "path": ".",
+      "file_count": 9,
+      "fingerprint": "3eeda098a34a6a994b842d92f8bdde7124ac7db75f789d7ff0963846c4dfe0f1"
+    },
+    {
+      "id": ".circleci",
+      "path": ".circleci",
+      "file_count": 1,
+      "fingerprint": "1f13ce5941a1667a3fa60bb86a9fa5296b85c819d6214eb3e0f050903cc9bfb5"
+    },
+    {
+      "id": "assets",
+      "path": "assets",
+      "file_count": 1,
+      "fingerprint": "c9612f83cf54244b007a20ca99198d8426a4550f60ef6f935fc4c75ffffe2a38"
+    },
+    {
+      "id": "docs",
+      "path": "docs",
+      "file_count": 1,
+      "fingerprint": "86782b3d933de2063bd5aa6e0b2cb6e8e0e30582ad1c6e71324aa3f68aeed0b2"
+    },
+    {
+      "id": "src",
+      "path": "src",
+      "file_count": 10,
+      "fingerprint": "b434fb48e64803c1ad986198dd1847302f6ad2f324594f622f73fd0d622a646b"
+    },
+    {
+      "id": "tests",
+      "path": "tests",
+      "file_count": 5,
+      "fingerprint": "e3e48e13458b4931a207bfe9c064e3be641ccb24aa54c2be88fa5654bfba7360"
+    }
+  ]
+}
